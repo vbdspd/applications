@@ -62,7 +62,7 @@ const getZl = async () => {
 };
 
 const start = async ()=>{
-    schedule.scheduleJob(`25 25 9 * * *`, async () => {
+    schedule.scheduleJob(`25 26 9 * * *`, async () => {
         const res =await getZl()
         sendCrazyB(res)
     });
