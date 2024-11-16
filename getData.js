@@ -60,7 +60,7 @@ const getRes = async () => {
                 const zrzt = day2[2] >= (day3[2] + day3[2] * 0.1);
                 const jrcj = day1[5];
                 const zrcj = day2[5];
-                if ((jrcj > zrcj) && (jrzt || zrzt)) {
+                if ((jrcj > zrcj*0.9) && (jrzt || zrzt)) {
                     results.push(code);
                 }
             }
